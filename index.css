@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color:silver;
+}
+
+nav{
+display: flex;
+justify-content: space-between;
+background-color: black;
+color: white;
+padding: 16px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.logo li{
+    list-style: none;
+    margin-inline: 22px;
+}
+
+.logo li:hover{
+    color: aqua;
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+
+.searchBar{
+    display: flex;
+}
+
+.searchBar input{
+    width: 220px;
+    padding: 5px;
+    font-size: 18px;
+    border: none;
+    border-radius: 3px;
+    margin-inline: 5px;
+}
+.searchBar button{
+    width: 60px;
+    height: 32px;
+    background-color: rgb(0, 140, 255);
+    color: white;
+    font-size: 15px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+}
+.cardData{
+    display: grid;
+    width: 80%;
+    grid-template-columns:repeat(auto-fit, minmax(334px, 1fr));
+    grid-template-rows:repeat(auto-fit, minmax(400px, 1fr));
+    margin: auto;
+    margin-top: 22px;
+    /* margin-left: 130px;
+    margin-right: 50px; */
+}
+.card{
+    /* width: 334px; */
+    background-color:#fff;
+    padding: 11px;
+    margin-top: 40px;
+    cursor: pointer;
+    margin-inline: 15px;
+}
+.card img{
+    width: 100%;
+    height: 45%;
+}
+.card h3{
+    margin-top: 10px;
+    padding: 3px;
+    
+}
+.card p{
+    margin-top: 10px;
+    padding: 2px;
+    
+
+}
+.category{
+    position: absolute;
+    color: black;
+    margin-top: 60px;
+    margin-left: 150px;
+}
+
+@media only screen and (max-width:775px) {
+    li{
+        display: none;
+    }    
+}
+
+@media only screen and (max-width: 480px) and (min-width: 360px){
+    nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;   
+    }
+    .logo{
+        justify-content: center;
+    }
+    .searchBar{
+        display: flex;
+        justify-content: center;
+        margin-top: 8px;
+    }
+    .category{
+        margin-top: 160px;
+        text-align: center;
+        margin-right: 30px;
+        margin-left: 34px;
+        font-size: 12px;
+    }
+    .card{
+        margin-right: 60px;
+        margin-top: 40px;
+    }
+    .cardData{
+        /* display: grid;
+        width: 80%; 
+       
+        
+         margin: auto;
+        margin-top: 22px;
+        margin-left: auto;
+        margin-right: auto;  */ 
+    }
+    .card h3{
+        margin-top: 10px;
+        padding: 3px;
+        font-size: 15px;
+    }
+    .card p{
+        margin-top: 10px;
+        padding: 2px;
+        font-size: 12px;
+    
+    }
+    
+}
